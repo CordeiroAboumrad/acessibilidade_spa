@@ -67,8 +67,6 @@
 
 @media screen and (min-width: 76.8rem) {
 
-    /* Seção inscrição */
-
     .container__incricao {
         display: flex;
         text-align: center;
@@ -103,8 +101,6 @@
 }
 
 @media screen and (min-width: 144rem) {
-
-      /* Seção inscrição */
 
   .container__incricao--form-input {
     width: 7.9rem;
