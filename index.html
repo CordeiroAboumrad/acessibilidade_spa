@@ -29,9 +29,9 @@
             </a>
             <span class="cabecalho__nav--line"></span>
             <ul class="cabecalho__nav--lista">
-                <li class="cabecalho__lista-item"><a href="#">Espaço</a></li>
-                <li class="cabecalho__lista-item"><a href="#">Serviços</a></li>
-                <li class="cabecalho__lista-item"><a href="#contato-formulario">Contato</a></li>
+                <li aria-label="Espaço" class="cabecalho__lista-item"><a href="#">Espaço</a></li>
+                <li aria-label="Serviços" class="cabecalho__lista-item"><a href="#">Serviços</a></li>
+                <li aria-label="Contato" class="cabecalho__lista-item"><a href="#contato-formulario">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -55,7 +55,7 @@
                     <h2 class="container__secao--conteudo--textos-titulo">Tecnologia e natureza no seu relaxamento</h2>
                     <p class="container__secao--conteudo--textos-infos">Equipamentos de ponta, produtos certificados e
                         uma equipe qualificada te ajudam a se livrar do stress com equilíbrio e tranquilidade.</p>
-                    <object tabindex="-1" data="./assets/separador-direita.svg" type="image/svg+xml"></object>
+                    <object aria-hidden="true" tabindex="-1" data="./assets/separador-direita.svg" type="image/svg+xml"></object>
                 </div>
             </article>
             <article class="container__secao--conteudo">
@@ -63,7 +63,7 @@
                     <h2 class="container__secao--conteudo--textos-titulo">Elevando o seu bem-estar</h2>
                     <p class="container__secao--conteudo--textos-infos">Cada visita é uma jornada. Não importa a sua
                         rotina, aqui você encontra seu paraíso particular.</p>
-                    <object tabindex="-1" data="./assets/separador-esquerda.svg" type="image/svg+xml"></object>
+                    <object  aria-hidden="true" tabindex="-1" data="./assets/separador-esquerda.svg" type="image/svg+xml"></object>
                 </div>
                 <div>
                     <img class="container__secao--conteudo--img2" src="./assets/espaco-2.png"
@@ -126,7 +126,7 @@
             </div>
             <form id="contato-formulario" action="." class="container__contato--form">
                 <div class="container__contato--form-conteudo">
-                    <h5 class="container__contato--form-conteudo-titulo">Entre em contato</h5>
+                    <h5 id="titulo-contato" class="container__contato--form-conteudo-titulo">Entre em contato</h5>
                     <p class="container__contato--form-conteudo-texto">Reserve seu horário, tire dúvidas ou proponha
                         sugestões, nosso
                         canal é aberto para
@@ -139,19 +139,19 @@
                     <input id="email" type="email" placeholder="Digite seu email" name="email" required>
                     <label for="telefone">Telefone</label>
                     <input id="telefone" type="text" placeholder="(XX) XXXXX-XXXX" name="telefone" required>
-                    <fieldset>
+                    <fieldset aria-labelledby="titulo-contato">
                         <legend class="container__contato--inputs--titulo">Prefere contato por:</legend>
                         <div class="container__contato--inputs--div">
                             <div>
-                                <input id="ligacao" type="radio">
+                                <input id="ligacao" type="radio" name="contato">
                                 <label for="ligacao">Ligação</label>
                             </div>
                             <div>
-                                <input id="whatsapp" type="radio">
+                                <input id="whatsapp" type="radio" name="contato">
                                 <label for="whatsapp">WhatsApp</label>
                             </div>
                             <div>
-                                <input id="email-contato" type="radio">
+                                <input id="email-contato" type="radio" name="contato">
                                 <label for="email-contato">Email</label>
                             </div>
                         </div>
@@ -169,11 +169,11 @@
         <address>
             Acesse nossas redes:<br>
             <ul class="rodape__nav--lista">
-                <li><a aria-label="Acessar Whatsapp da Calmaria Spa" href="" class="rodape__nav--lista--whatsapp"></a></li>
+                <li><a aria-label="Acessar uatizapi da Calmaria Spa" href="" class="rodape__nav--lista--whatsapp"></a></li>
                 <li><a aria-label="Instagram da Calmaria Spa" href="" class="rodape__nav--lista--instagram"></a></li>
                 <li><a aria-label="TikTok da Calmaria Spa" href="" class="rodape__nav--lista--tiktok"></a></li>
             </ul>
-            <small>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</small>
+            <small>Projeto fictício sem fins comerciais.</small>
         </address>
     </footer>
 
